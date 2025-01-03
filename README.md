@@ -1,12 +1,13 @@
 # Computational-Intelligence-Project
 
+---
 
 ## Phase_1: Image Clustering and Classification
 
 
-This project focuses on clustering and classifying image data using advanced computational intelligence techniques. The workflow involves feature extraction, clustering, and classification, with thorough analysis and optimization for performance enhancement.
+This phase focuses on clustering and classifying image data using advanced computational intelligence techniques. The workflow involves feature extraction, clustering, and classification, with thorough analysis and optimization for performance enhancement.
 
-### Project Objectives
+### Phase Objectives
 - Perform feature extraction from images (color and spatial features).
 - Cluster image pixels into meaningful regions using DBSCAN and K-Means algorithms.
 - Extract statistical and spatial features for each region.
@@ -55,17 +56,28 @@ This project focuses on clustering and classifying image data using advanced com
 
 ### Visual Examples
 - **Sample Input Image**: Example of an input image before processing.
+<p float="left">
+  <img src="images/image1.png" width="30%" />
+  <img src="images/image2.png" width="30%" />
+  <img src="images/image3.png" width="30%" />
+</p>
 - **Clustering Output**: Visual representation of regions clustered using K-Means (\( K=5 \)).
+<p float="left">
+  <img src="images/image1_1.png" width="30%" />
+  <img src="images/image2_1.png" width="30%" />
+  <img src="images/image3_1.png" width="30%" />
+</p>
 - **Confusion Matrix**: Confusion matrix showing the classification results for the best model.
 
 
+---
 
 
 ## Phase_2: Image Region Optimization and Feature Selection
 
 This phase focuses on optimizing the identified regions from the first phase and selecting the most impactful features for image classification. The workflow enhances the classification pipeline by refining regions and prioritizing features.
 
-### Project Objectives
+### Phase Objectives
 - Refine the extracted regions by ranking and removing the least significant ones.
 - Perform feature selection to identify the most impactful features for classification.
 - Improve classification accuracy by reducing redundancy and emphasizing essential features.
@@ -112,6 +124,9 @@ This phase focuses on optimizing the identified regions from the first phase and
 
 ---
 This phase demonstrates significant enhancements to the classification pipeline by refining regions and selecting impactful features, setting the stage for further optimization and scalability.
+
+---
+
 
 ### Requirements
 - Python 3.8+
