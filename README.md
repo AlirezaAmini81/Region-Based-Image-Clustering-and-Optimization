@@ -28,6 +28,28 @@ This phase focuses on clustering and classifying image data using advanced compu
    - Apply clustering algorithms (e.g., K-Means, DBSCAN) to group pixels into regions.
      - For K-Means, divide each image into 5 regions.
      - Evaluate clustering quality using metrics like Davies-Bouldin Index and Calinski-Harabasz Index.
+<p float="center">
+  <img src="CAI_Phase1/images/image1.png" width="25%" />
+  <img src="CAI_Phase1/images/image2.png" width="25%" />
+  <img src="CAI_Phase1/images/image3.png" width="25%" />
+</p>
+<p align="center">
+Example of an input image before clustering.
+</p>
+<br />
+
+
+<p float="center">
+  <img src="CAI_Phase1/images/image1_1.png" width="25%" />
+  <img src="CAI_Phase1/images/image2_1.png" width="25%" />
+  <img src="CAI_Phase1/images/image3_1.png" width="25%" />
+</p>
+<p align="center">
+Visual representation of regions clustered using K-Means (K=5).
+
+</p>
+
+
 
 4. **Region-Level Feature Extraction**:
    - For each region resulting from clustering, calculate:
@@ -47,28 +69,19 @@ This phase focuses on clustering and classifying image data using advanced compu
 7. **Performance Evaluation**:
    - Compute metrics: Accuracy, Precision, Recall, F1-Score.
    - Analyze confusion matrices and identify misclassifications.
+<p float="left">
+  <img src="CAI_Phase1/images/conf_matrix.png" width="40%" />
+</p>
+<p align="left">
+Confusion matrix showing the classification results for the best model.
+</p>
+
 
 ### Results
 - Best clustering results achieved using K-Means with \( K=5 \).
 - Random Forest classification accuracy: **81.37%** based on histograms.
 - Identified key factors affecting misclassification, including insufficient diversity in color features.
 - Suggested improvements: Additional feature extraction (e.g., shape-based features) and optimized sampling.
-
-### Visual Examples
-- **Sample Input Image**: Example of an input image before processing.
-<p float="left">
-  <img src="images/image1.png" width="30%" />
-  <img src="images/image2.png" width="30%" />
-  <img src="images/image3.png" width="30%" />
-</p>
-- **Clustering Output**: Visual representation of regions clustered using K-Means (\( K=5 \)).
-<p float="left">
-  <img src="images/image1_1.png" width="30%" />
-  <img src="images/image2_1.png" width="30%" />
-  <img src="images/image3_1.png" width="30%" />
-</p>
-- **Confusion Matrix**: Confusion matrix showing the classification results for the best model.
-
 
 ---
 
@@ -90,6 +103,16 @@ This phase focuses on optimizing the identified regions from the first phase and
   2. Rank regions based on their contribution to the class probability.
   3. Iteratively remove the least significant region and recalculate probabilities until only the most impactful regions remain.
 - **Outcome**: A refined set of regions for each image.
+<p float="center">
+  <img src="CAI_Phase1/images/image4.png" width="40%" />
+  <img src="CAI_Phase1/images/image5.png" width="40%" />
+  <img src="CAI_Phase1/images/image6.png" width="40%" />
+   <img src="CAI_Phase1/images/download (2).png" width="40%" />
+</p>
+<p align="left">
+Visual representation of regions clustered (segmented) images and their corresponding most important region.
+</p>
+<br/>
 
 #### 2. **Feature Selection**
 - **Objective**: Select the most influential features from the refined regions for classification.
