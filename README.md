@@ -1,4 +1,4 @@
-# Computational-Intelligence-Project
+# Region-Based Image Clustering and Optimization
 
 ---
 
